@@ -1,0 +1,344 @@
+/*
+Project Name: Final Project
+Client: ABC Dog Training
+Author: Stevie Burt
+Developer @GA in Atlanta
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+  }
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* COLOR SCHEME */
+/* Teal-ish = #00B3AB */
+/* Blue = #31A9B8 */
+/* Gray = #606161 */
+/* Background - Light Gray = #DBDBDF */
+/* Pink-ish = #e09389 */
+/* Beige = #FFEFC7 */
+
+
+
+body {
+    color: #00B3AB;
+    font-size: 26px;
+    line-height: 1.4;
+    color: #606161;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    background: #f0efef;
+  }
+  a {
+    text-decoration: none;
+  }
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+header {
+  background: #f0efef;
+  color: #00B3AB;
+  font-family: 'Oswald', sans-serif;
+  padding: 25px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: center;
+}
+
+header #logo {
+  width: 16%;
+  padding-left: 50px;
+}
+
+header img {
+  width: 100%;
+}
+
+header #ABCTitle {
+  width: 84%;
+}
+
+header #title {
+  font-size: 48px;
+  width: 100%;
+  padding-left: 45px;
+}
+
+/* header nav {
+  width: 100%;
+} */
+
+#navigationBar {
+  background: #606161;
+  color: #e09389;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+  font-size: 24px;
+  font-weight:600;
+}
+
+nav ul li a {
+  color: #e09389;
+  opacity: 0.6;
+}
+
+#homeNav, #ourStoryNav, #contactUsNav  {
+  opacity: 1;
+  font-size: 26px;
+}
+
+nav ul li a:hover {
+  font-size: 26px;
+  opacity: 1;
+  text-shadow: 5px 5px 5px #222;
+}
+
+#main {
+  background: #DBDBDF;
+  /* padding: 80px 0px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* Center the container */
+.container {
+  /* width: 1115px; */
+  width: 50%;
+  margin: 0 auto;
+  padding: 80px 0px;
+}
+.sideContainer {
+  width: 20%;
+  background: #f0efef;
+  padding: 80px 65px;
+  box-shadow: 0 0 8px #606161;
+}
+
+#mainPosts {
+  /* width: 700px; */
+  width: 100%;
+  display: inline-block;
+  margin-right: 155px;
+  vertical-align: top;
+}
+#sidebar {
+  /* width: 245px; */
+  display: inline-block;
+  vertical-align: top;
+}
+.post {
+  border-bottom: 1px solid #e09389;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+#article1 {
+  padding-top: 40px;
+}
+.post h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  text-align: center;
+}
+h2 a {
+  color: #e09389;
+}
+
+.post img {
+  margin-bottom: 30px;
+}
+.post p {
+  font-size: 24px;
+  line-height: 1.333;
+  color: #606161;
+}
+.post p:first-of-type:first-letter {
+  float: left;
+  font-size: 80px;
+  line-height: 65px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: 600;
+}
+.readmore, .readless {
+  text-align: right;
+}
+.readmore a, .readless a {
+  color: #e09389;
+  font-weight: 600;
+  font-size: 24px;
+  opacity: 0.6;
+}
+.readmore a:hover, .readless a:hover {
+  font-size: 26px;
+  opacity: 1;
+  text-shadow: 2px 2px 5px #222;
+}
+.learnmore {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  opacity: 0.6;
+  color: #00B3AB;
+}
+.learnmore:hover {
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  opacity: 1;
+  text-shadow: 2px 2px 5px #222;
+}
+.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 280px;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.tealish {
+  background: #00B3AB;
+  color: #fff;
+  font-size: 24px;
+}
+
+.sidebarSections {
+  margin: 0 auto;
+  padding: 50px 0px;
+  /* box-shadow: 0 0 8px #606161; */
+}
+#sidebar h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #e09389;
+}
+#sidebar ul li a {
+  color: #e09389;
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+#sidebar ul li a:hover {
+  color: #e09389;
+  font-size: 26px;
+  font-weight: 800;
+  opacity: 1;
+  text-shadow: 2px 2px 5px #222;
+}
+
+#sidebar p {
+  font-size: 22px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+#sidebar p a {
+  color: #e09389;
+  font-weight: 600;
+}
+
+#bottom-cta {
+  background: #606161;
+  padding: 30px;
+  text-align: center;
+}
+
+footer {
+  background: #f0efef;
+  padding: 65px 0 45px;
+  text-align: center;
+}
+footer h4 {
+  font-weight: 600;
+}
+footer img {
+  color: #00B3AB;
+  padding: 20px 0px 50px;
+}
+footer #fbookGray {
+  width: 3%;
+}
+footer #fbookHover {
+  width: 4%;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+footer #emailGray {
+  width: 3%;
+}
+footer #emailHover {
+  width: 4%;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+footer p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  color: #00B3AB;
+  font-weight: 600;
+}
+
+.hide {
+  display: none;
+}
+
+
+/******************************************
+/* EXTRAS
+/*******************************************/
+#gallerySpotlight {
+  padding: 20px;
+  border-bottom: 1px solid #e09389;
+  max-width: 100%;
+}
+
+#slideshow {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+#gallerySpolight #slideshow img {
+  border: 1px solid black;
+  width: 100%;
+}
+
+#baileyKeena {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 50px;
+  border: 3px solid #00B3AB;
+  padding: 5px;
+}
