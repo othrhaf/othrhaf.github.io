@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="ABC Dog Training" content="A fun and humane way to train your dog.">
+        <title>ABC Dog Training</title>
+
+        <!-- external CSS Links -->
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans:300,600|Oswald:400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="Images/Logos/final.png" class="logoABC" atl="ABC Dog Training Logo">
+            </div>
+
+            <div class="ABCTitle">
+                <!-- Title -->
+                <div class="title">
+                    <h1>A Better Companion Dog Training</h1>
+                </div>
+            </div>
+        </header>
+
+        
+        <div id="navigationBar">
+            <!-- Navigations -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ourStory.html">Our Story</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contactUs.html" id="contactUsNav">Contact Us</a></li>
+                </ul>
+            </nav>
+            <section class="hidden">
+                <div class="logo">
+                    <img src="Images/Logos/final.png" class="logoABC" atl="ABC Dog Training Logo">
+                </div>
+    
+                <div class="ABCTitle">
+                    <!-- Title -->
+                    <div class="title">
+                        <h1>A Better Companion Dog Training</h1>
+                    </div>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <ul>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html">Home</a>
+                        <a href="ourStory.html">Our Story</a>
+                        <a href="services.html">Services</a>
+                        <a href="events.html">Events</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contactUs.html">Contact Us</a>
+                    </ul>
+                </div>
+                <div class="line">&#9776;</div>
+            </section>
+        </div>
+
+        <section id="main">
+            <div class="container">
+                <!-- <section id="posts">
+                    <article class="post">
+                        <div class="underConstruction-section">
+                            <img 
+                            src="Images/iconfinder_Under-construction_49270.png" 
+                            alt="Under Contstruction" 
+                            id="underContstruction">
+                        </div>
+                        <h1>
+                            Sorry this page is still under construction. Please check back later as our updates are complete.
+                            <br>
+                            <br>
+                            Sorry for any Inconvienence this may have caused.
+                        </h1>
+                        <p></p>
+                    </article>
+                </section> -->
+
+                <section id="contactUs">
+                    <form method="POST">
+                        <fieldset>
+                            <legend>Contact Us</legend>
+
+                            <div class="form__field-group">
+                                <label class="formLabel form__text form__validate form__validate--focused">Name:<sup class="required-asteric">*</sup></label>
+                                <input type="text" name="name" placeholder="Full Name" required>
+                            </div>
+                            
+                            <span class="display-block">"emptylineforspacing"</span>
+
+                            <div class="form__field-group">
+                                <label class="formLabel form__text form__validate form__validate--focused">Email: <sup class="required-asteric">*</sup></label>
+                                <input type="email" name="email" placeholder="test@test.com" required>
+                            </div>
+                            
+                            <span class="display-block">"emptylineforspacing"</span>
+
+                            <div class="form__field-group">
+                                <label class="formLabel form__text form__validate form__validate--focused">Phone:</label>
+                                <input type="tel" name="phone" placeholder="888-888-8888" pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}">
+                            </div>
+
+                            <span class="display-block">"emptylineforspacing"</span>
+                            <span class="display-block">"emptylineforspacing"</span>
+
+                            <div class="form__field-group">
+                                <label class="formLabel form__text">Reason For Contact: </label>
+                                <select name="reason">
+                                    <option>-- SELECT A REASON --</option>
+                                    <option value="serviceRequest">Interested in a Service</option>
+                                    <option value="question">Have a Question</option>
+                                    <option value="websiteIssue">Report an Issue</option>
+                                </select>
+                            </div>
+
+                            <span class="display-block">"emptylineforspacing"</span>
+
+                            <div class="form__field-group">
+                                <label class="formLabel form__text">Description:</label>
+                                <textarea id="description" rows="4" placeholder="Enter a Description"></textarea>
+                            </div>
+                            
+                            <!-- <div class="form__field-group">
+                                <label class="formLabel">State:</label>
+                                <select name="state">
+                                    <option>-- Select State --</option>
+                                    <option value="Atlanta">Atlanta</option>
+                                    <option value="Austin">Austin</option>
+                                    <option value="Baltimore">Baltimore</option>
+                                    <option value="Boston">Boston</option>
+                                    <option value="Chicago">Chicago</option>
+                                    <option value="Dallas">Dallas</option>
+                                    <option value="Denver">Denver</option>
+                                    <option value="Detroit">Detroit</option>
+                                    <option value="KansasCity">Kansas City</option>
+                                    <option value="LosAngeles">Los Angeles</option>
+                                    <option value="Miami">Miami</option>
+                                    <option value="Minneapolis">Minneapolis</option>
+                                    <option value="NewYorkCity">New York City</option>
+                                    <option value="Orlando">Orlando</option>
+                                    <option value="Phoenix">Phoenix</option>
+                                    <option value="Portland">Portland</option>
+                                    <option value="Providence">Providence</option>
+                                    <option value="RaleighDurham">Raleigh-Durham</option>
+                                    <option value="SanDiego">San Diego</option>
+                                    <option value="SanFrancisco">San Francisco</option>
+                                    <option value="Seattle">Seattle</option>
+                                    <option value="Stamford">Stamford</option>
+                                    <option value="TampaBay">TampaBay</option>
+                                    <option value="Toronto">Toronto</option>
+                                    <option value="WashingtonDC">Washington D.C.</option>
+                                </select> 
+                            </div> -->
+
+                            <!-- <input type="button" name="register-btn" value="Register Now!" class="button blue" id="register-btn"> -->
+                        </fieldset>
+                    </form>
+                </section>
+                
+            </div>
+        </section>
+
+
+        <aside id="bottom-cta">
+                <!-- <a class="bottom button tealish" href="#">Sign Up Now!</a> -->
+                <!-- Company Name -->
+                <p>A Better Companion Dog Training 2018</p>
+            </aside>
+    
+            <footer>
+                <div class="footerFlexSections">
+                    <section>
+                        <h4 class="title">Contact Us</h4>
+                        <!-- Contact Me Page -->
+                        <a href="#" class="logo" id="emailLogo">
+                            <img src="Images/emailLogo.png" alt="email logo" id="emailGray">
+                        </a>
+            
+                        <!-- Facebook -->
+                        <a href="#" class="logo" id="facebookLogo">
+                            <img src="images/facebookLogo.png" alt="fbook logo" id="fbookGray">
+                        </a>
+                    </section>
+    
+                    <section>
+                        <h4 class="title">Location</h4>
+                        <!-- Google Maps Link -->
+                        <a href="https://www.google.com/maps/place/6972+N+Broadway,+Kansas+City,+MO+64118/@39.2209876,-94.5881299,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0f7dcda2ada09:0xcf6516d858b221df!8m2!3d39.2209876!4d-94.5859412" target="_blank" rel="noopener">
+                            <div id="googleAddr">6972 North Broadway, Gladstone, MO 64118</div>
+                        </a>
+                    </section>
+                </div>
+                
+                <div id="compNameFooter">
+                    <!-- Company Name -->
+                    <p>A Better Companion Dog Training 2018</p>
+                </div>
+    
+            </footer>
+    
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="js/index.js"></script>
+        </body>
+    </html>
